@@ -1773,7 +1773,7 @@ SPEC CHECKSUMS:
   glog: 08b301085f15bcbb6ff8632a8ebaf239aae04e6a
   hermes-engine: 06a9c6900587420b90accc394199527c64259db4
   NitroModules: ff8680342cb7008646d8160ff9b30ba74c681c11
-  NitroTextToSpeech: 9e71dbd9504be3964bd3fd3072050a97f95fe3b9
+  NitroTextToSpeech: 73238ced3ca1cf48877f71888367c796824d948a
   RCT-Folly: bf5c0376ffe4dd2cf438dcf86db385df9fdce648
   RCTDeprecation: fb7d408617e25d7f537940000d766d60149c5fea
   RCTRequired: 9aaf0ffcc1f41f0c671af863970ef25c422a9920
