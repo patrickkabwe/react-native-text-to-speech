@@ -10,7 +10,7 @@ updates:
 
   - package-ecosystem: "gradle"
     directories:
-      - "/packages/react-native-nitro-tts/android/"
+      - "/react-native-nitro-tts/android/"
       - "/example/android/"
     schedule:
       interval: "daily"
@@ -22,7 +22,7 @@ updates:
 
   - package-ecosystem: "npm"
     directories:
-      - "/packages/react-native-nitro-tts/"
+      - "/react-native-nitro-tts/"
       - "/example/"
     schedule:
       interval: "daily"
