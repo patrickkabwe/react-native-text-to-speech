@@ -123,9 +123,9 @@ export default App;
 ### Methods
 
 - `speak(text: string, options?: TextToSpeechOptions): Promise<void>`
-- `stop(): Promise<void>`
-- `pause(): Promise<void>`
-- `resume(): Promise<void>`
+- `stop(): Promise<boolean>`
+- `pause(): Promise<boolean>`
+- `resume(): Promise<boolean>`
 
 ### Events
 
