@@ -1,0 +1,24 @@
+{
+  "$schema": "https://nitro.margelo.com/nitro.schema.json",
+  "cxxNamespace": [
+    "texttospeech"
+  ],
+  "ios": {
+    "iosModuleName": "TextToSpeech"
+  },
+  "android": {
+    "androidNamespace": [
+      "texttospeech"
+    ],
+    "androidCxxLibName": "TextToSpeech"
+  },
+  "autolinking": {
+    "TextToSpeech": {
+      "swift": "TextToSpeech",
+      "kotlin": "TextToSpeech"
+    }
+  },
+  "ignorePaths": [
+    "**/node_modules"
+  ]
+}
