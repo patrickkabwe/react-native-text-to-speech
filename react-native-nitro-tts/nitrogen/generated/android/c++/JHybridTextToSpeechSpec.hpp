@@ -14,14 +14,14 @@
 
 
 
-namespace margelo::nitro::texttospeech {
+namespace margelo::nitro::nitrotexttospeech {
 
   using namespace facebook;
 
   class JHybridTextToSpeechSpec: public jni::HybridClass<JHybridTextToSpeechSpec, JHybridObject>,
                                  public virtual HybridTextToSpeechSpec {
   public:
-    static auto constexpr kJavaDescriptor = "Lcom/margelo/nitro/texttospeech/HybridTextToSpeechSpec;";
+    static auto constexpr kJavaDescriptor = "Lcom/margelo/nitro/nitrotexttospeech/HybridTextToSpeechSpec;";
     static jni::local_ref<jhybriddata> initHybrid(jni::alias_ref<jhybridobject> jThis);
     static void registerNatives();
 
@@ -64,4 +64,4 @@ namespace margelo::nitro::texttospeech {
     jni::global_ref<JHybridTextToSpeechSpec::javaobject> _javaPart;
   };
 
-} // namespace margelo::nitro::texttospeech
+} // namespace margelo::nitro::nitrotexttospeech

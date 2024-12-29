@@ -1,6 +1,6 @@
 //
 //  TextToSpeechService.swift
-//  TextToSpeech
+//  NitroTextToSpeech
 //
 //  Created by Patrick Kabwe on 29/12/2024.
 //

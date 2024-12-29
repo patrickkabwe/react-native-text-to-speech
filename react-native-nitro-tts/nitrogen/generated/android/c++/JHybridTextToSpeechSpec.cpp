@@ -8,11 +8,11 @@
 #include "JHybridTextToSpeechSpec.hpp"
 
 // Forward declaration of `TextToSpeechVoice` to properly resolve imports.
-namespace margelo::nitro::texttospeech { struct TextToSpeechVoice; }
+namespace margelo::nitro::nitrotexttospeech { struct TextToSpeechVoice; }
 // Forward declaration of `TextToSpeechOptions` to properly resolve imports.
-namespace margelo::nitro::texttospeech { struct TextToSpeechOptions; }
+namespace margelo::nitro::nitrotexttospeech { struct TextToSpeechOptions; }
 // Forward declaration of `EventName` to properly resolve imports.
-namespace margelo::nitro::texttospeech { enum class EventName; }
+namespace margelo::nitro::nitrotexttospeech { enum class EventName; }
 
 #include <NitroModules/Promise.hpp>
 #include <NitroModules/JPromise.hpp>
@@ -29,7 +29,7 @@ namespace margelo::nitro::texttospeech { enum class EventName; }
 #include "JEventName.hpp"
 #include "JFunc_void_std__optional_std__string_.hpp"
 
-namespace margelo::nitro::texttospeech {
+namespace margelo::nitro::nitrotexttospeech {
 
   jni::local_ref<JHybridTextToSpeechSpec::jhybriddata> JHybridTextToSpeechSpec::initHybrid(jni::alias_ref<jhybridobject> jThis) {
     return makeCxxInstance(jThis);
@@ -144,4 +144,4 @@ namespace margelo::nitro::texttospeech {
     return __result->toCpp();
   }
 
-} // namespace margelo::nitro::texttospeech
+} // namespace margelo::nitro::nitrotexttospeech

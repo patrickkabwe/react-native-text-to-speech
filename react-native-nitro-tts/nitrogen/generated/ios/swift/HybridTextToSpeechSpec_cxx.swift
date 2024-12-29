@@ -19,11 +19,11 @@ import NitroModules
  */
 public class HybridTextToSpeechSpec_cxx {
   /**
-   * The Swift <> C++ bridge's namespace (`margelo::nitro::texttospeech::bridge::swift`)
-   * from `TextToSpeech-Swift-Cxx-Bridge.hpp`.
+   * The Swift <> C++ bridge's namespace (`margelo::nitro::nitrotexttospeech::bridge::swift`)
+   * from `NitroTextToSpeech-Swift-Cxx-Bridge.hpp`.
    * This contains specialized C++ templates, and C++ helper functions that can be accessed from Swift.
    */
-  public typealias bridge = margelo.nitro.texttospeech.bridge.swift
+  public typealias bridge = margelo.nitro.nitrotexttospeech.bridge.swift
 
   /**
    * Holds an instance of the `HybridTextToSpeechSpec` Swift protocol.
@@ -33,7 +33,7 @@ public class HybridTextToSpeechSpec_cxx {
   /**
    * Holds a weak pointer to the C++ class that wraps the Swift class.
    */
-  private var __cxxPart: bridge.std__weak_ptr_margelo__nitro__texttospeech__HybridTextToSpeechSpec_
+  private var __cxxPart: bridge.std__weak_ptr_margelo__nitro__nitrotexttospeech__HybridTextToSpeechSpec_
 
   /**
    * Create a new `HybridTextToSpeechSpec_cxx` that wraps the given `HybridTextToSpeechSpec`.
@@ -72,15 +72,15 @@ public class HybridTextToSpeechSpec_cxx {
 
   /**
    * Gets (or creates) the C++ part of this Hybrid Object.
-   * The C++ part is a `std::shared_ptr<margelo::nitro::texttospeech::HybridTextToSpeechSpec>`.
+   * The C++ part is a `std::shared_ptr<margelo::nitro::nitrotexttospeech::HybridTextToSpeechSpec>`.
    */
-  public func getCxxPart() -> bridge.std__shared_ptr_margelo__nitro__texttospeech__HybridTextToSpeechSpec_ {
+  public func getCxxPart() -> bridge.std__shared_ptr_margelo__nitro__nitrotexttospeech__HybridTextToSpeechSpec_ {
     let cachedCxxPart = self.__cxxPart.lock()
     if cachedCxxPart.__convertToBool() {
       return cachedCxxPart
     } else {
-      let newCxxPart = bridge.create_std__shared_ptr_margelo__nitro__texttospeech__HybridTextToSpeechSpec_(self.toUnsafe())
-      __cxxPart = bridge.weakify_std__shared_ptr_margelo__nitro__texttospeech__HybridTextToSpeechSpec_(newCxxPart)
+      let newCxxPart = bridge.create_std__shared_ptr_margelo__nitro__nitrotexttospeech__HybridTextToSpeechSpec_(self.toUnsafe())
+      __cxxPart = bridge.weakify_std__shared_ptr_margelo__nitro__nitrotexttospeech__HybridTextToSpeechSpec_(newCxxPart)
       return newCxxPart
     }
   }
@@ -210,7 +210,7 @@ public class HybridTextToSpeechSpec_cxx {
   @inline(__always)
   public func addEventListener(event: Int32, listener: bridge.Func_void_std__optional_std__string_) -> bridge.Result_std__function_void____ {
     do {
-      let __result = try self.__implementation.addEventListener(event: margelo.nitro.texttospeech.EventName(rawValue: event)!, listener: { () -> ((String?) -> Void) in
+      let __result = try self.__implementation.addEventListener(event: margelo.nitro.nitrotexttospeech.EventName(rawValue: event)!, listener: { () -> ((String?) -> Void) in
         let __wrappedFunction = bridge.wrap_Func_void_std__optional_std__string_(listener)
         return { (__word: String?) -> Void in
           __wrappedFunction.call({ () -> bridge.std__optional_std__string_ in

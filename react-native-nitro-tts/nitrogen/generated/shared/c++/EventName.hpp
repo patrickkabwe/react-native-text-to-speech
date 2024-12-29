@@ -23,7 +23,7 @@
 #error NitroModules cannot be found! Are you sure you installed NitroModules properly?
 #endif
 
-namespace margelo::nitro::texttospeech {
+namespace margelo::nitro::nitrotexttospeech {
 
   /**
    * An enum which can be represented as a JavaScript union (EventName).
@@ -34,11 +34,11 @@ namespace margelo::nitro::texttospeech {
     START      SWIFT_NAME(start) = 2,
   } CLOSED_ENUM;
 
-} // namespace margelo::nitro::texttospeech
+} // namespace margelo::nitro::nitrotexttospeech
 
 namespace margelo::nitro {
 
-  using namespace margelo::nitro::texttospeech;
+  using namespace margelo::nitro::nitrotexttospeech;
 
   // C++ EventName <> JS EventName (union)
   template <>

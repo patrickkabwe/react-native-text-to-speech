@@ -14,11 +14,11 @@
 #endif
 
 // Forward declaration of `TextToSpeechOptions` to properly resolve imports.
-namespace margelo::nitro::texttospeech { struct TextToSpeechOptions; }
+namespace margelo::nitro::nitrotexttospeech { struct TextToSpeechOptions; }
 // Forward declaration of `TextToSpeechVoice` to properly resolve imports.
-namespace margelo::nitro::texttospeech { struct TextToSpeechVoice; }
+namespace margelo::nitro::nitrotexttospeech { struct TextToSpeechVoice; }
 // Forward declaration of `EventName` to properly resolve imports.
-namespace margelo::nitro::texttospeech { enum class EventName; }
+namespace margelo::nitro::nitrotexttospeech { enum class EventName; }
 
 #include <NitroModules/Promise.hpp>
 #include <string>
@@ -29,7 +29,7 @@ namespace margelo::nitro::texttospeech { enum class EventName; }
 #include <functional>
 #include "EventName.hpp"
 
-namespace margelo::nitro::texttospeech {
+namespace margelo::nitro::nitrotexttospeech {
 
   using namespace margelo::nitro;
 
@@ -76,4 +76,4 @@ namespace margelo::nitro::texttospeech {
       static constexpr auto TAG = "TextToSpeech";
   };
 
-} // namespace margelo::nitro::texttospeech
+} // namespace margelo::nitro::nitrotexttospeech

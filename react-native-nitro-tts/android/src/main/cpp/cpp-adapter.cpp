@@ -1,6 +1,6 @@
 #include <jni.h>
-#include "TextToSpeechOnLoad.hpp"
+#include "NitroTextToSpeechOnLoad.hpp"
 
 JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM* vm, void*) {
-  return margelo::nitro::texttospeech::initialize(vm);
+  return margelo::nitro::nitrotexttospeech::initialize(vm);
 }

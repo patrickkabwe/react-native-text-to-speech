@@ -1,10 +1,17 @@
+//
+//  HybridTextToSpeech.swift
+//  NitroTextToSpeech
+//
+//  Created by Patrick Kabwe on 29/12/2024.
+//
+
 import Foundation
 import AVFAudio
 import NitroModules
 
 typealias TextToSpeechListener = (String?) -> Void
 
-final class TextToSpeech: HybridTextToSpeechSpec {
+final class HybridTextToSpeech: HybridTextToSpeechSpec {
     private let textToSpeechService: TextToSpeechService
     
     var listeners: Dictionary<EventName, TextToSpeechListener> = [:]
@@ -67,7 +74,7 @@ final class TextToSpeech: HybridTextToSpeechSpec {
     }
 }
 
-extension TextToSpeech: TextToSpeechDelegate {
+extension HybridTextToSpeech: TextToSpeechDelegate {
     func textToSpeechDidStart(_ synthesizer: AVSpeechSynthesizer) {
         notifyListeners(withEvent: .start, nil)
     }

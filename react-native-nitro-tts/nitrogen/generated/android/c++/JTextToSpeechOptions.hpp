@@ -13,7 +13,7 @@
 #include <optional>
 #include <string>
 
-namespace margelo::nitro::texttospeech {
+namespace margelo::nitro::nitrotexttospeech {
 
   using namespace facebook;
 
@@ -22,7 +22,7 @@ namespace margelo::nitro::texttospeech {
    */
   struct JTextToSpeechOptions final: public jni::JavaClass<JTextToSpeechOptions> {
   public:
-    static auto constexpr kJavaDescriptor = "Lcom/margelo/nitro/texttospeech/TextToSpeechOptions;";
+    static auto constexpr kJavaDescriptor = "Lcom/margelo/nitro/nitrotexttospeech/TextToSpeechOptions;";
 
   public:
     /**
@@ -70,4 +70,4 @@ namespace margelo::nitro::texttospeech {
     }
   };
 
-} // namespace margelo::nitro::texttospeech
+} // namespace margelo::nitro::nitrotexttospeech

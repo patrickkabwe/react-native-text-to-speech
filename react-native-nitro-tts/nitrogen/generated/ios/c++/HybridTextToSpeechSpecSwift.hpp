@@ -10,14 +10,14 @@
 #include "HybridTextToSpeechSpec.hpp"
 
 // Forward declaration of `HybridTextToSpeechSpec_cxx` to properly resolve imports.
-namespace TextToSpeech { class HybridTextToSpeechSpec_cxx; }
+namespace NitroTextToSpeech { class HybridTextToSpeechSpec_cxx; }
 
 // Forward declaration of `TextToSpeechOptions` to properly resolve imports.
-namespace margelo::nitro::texttospeech { struct TextToSpeechOptions; }
+namespace margelo::nitro::nitrotexttospeech { struct TextToSpeechOptions; }
 // Forward declaration of `TextToSpeechVoice` to properly resolve imports.
-namespace margelo::nitro::texttospeech { struct TextToSpeechVoice; }
+namespace margelo::nitro::nitrotexttospeech { struct TextToSpeechVoice; }
 // Forward declaration of `EventName` to properly resolve imports.
-namespace margelo::nitro::texttospeech { enum class EventName; }
+namespace margelo::nitro::nitrotexttospeech { enum class EventName; }
 
 #include <NitroModules/Promise.hpp>
 #include <string>
@@ -28,9 +28,9 @@ namespace margelo::nitro::texttospeech { enum class EventName; }
 #include <functional>
 #include "EventName.hpp"
 
-#include "TextToSpeech-Swift-Cxx-Umbrella.hpp"
+#include "NitroTextToSpeech-Swift-Cxx-Umbrella.hpp"
 
-namespace margelo::nitro::texttospeech {
+namespace margelo::nitro::nitrotexttospeech {
 
   /**
    * The C++ part of HybridTextToSpeechSpec_cxx.swift.
@@ -45,13 +45,13 @@ namespace margelo::nitro::texttospeech {
   class HybridTextToSpeechSpecSwift: public virtual HybridTextToSpeechSpec {
   public:
     // Constructor from a Swift instance
-    explicit HybridTextToSpeechSpecSwift(const TextToSpeech::HybridTextToSpeechSpec_cxx& swiftPart):
+    explicit HybridTextToSpeechSpecSwift(const NitroTextToSpeech::HybridTextToSpeechSpec_cxx& swiftPart):
       HybridObject(HybridTextToSpeechSpec::TAG),
       _swiftPart(swiftPart) { }
 
   public:
     // Get the Swift part
-    inline TextToSpeech::HybridTextToSpeechSpec_cxx getSwiftPart() noexcept { return _swiftPart; }
+    inline NitroTextToSpeech::HybridTextToSpeechSpec_cxx getSwiftPart() noexcept { return _swiftPart; }
 
   public:
     // Get memory pressure
@@ -115,7 +115,7 @@ namespace margelo::nitro::texttospeech {
     }
 
   private:
-    TextToSpeech::HybridTextToSpeechSpec_cxx _swiftPart;
+    NitroTextToSpeech::HybridTextToSpeechSpec_cxx _swiftPart;
   };
 
-} // namespace margelo::nitro::texttospeech
+} // namespace margelo::nitro::nitrotexttospeech

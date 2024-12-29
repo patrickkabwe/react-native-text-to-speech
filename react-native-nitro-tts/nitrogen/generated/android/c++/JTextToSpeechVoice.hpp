@@ -12,7 +12,7 @@
 
 #include <string>
 
-namespace margelo::nitro::texttospeech {
+namespace margelo::nitro::nitrotexttospeech {
 
   using namespace facebook;
 
@@ -21,7 +21,7 @@ namespace margelo::nitro::texttospeech {
    */
   struct JTextToSpeechVoice final: public jni::JavaClass<JTextToSpeechVoice> {
   public:
-    static auto constexpr kJavaDescriptor = "Lcom/margelo/nitro/texttospeech/TextToSpeechVoice;";
+    static auto constexpr kJavaDescriptor = "Lcom/margelo/nitro/nitrotexttospeech/TextToSpeechVoice;";
 
   public:
     /**
@@ -61,4 +61,4 @@ namespace margelo::nitro::texttospeech {
     }
   };
 
-} // namespace margelo::nitro::texttospeech
+} // namespace margelo::nitro::nitrotexttospeech

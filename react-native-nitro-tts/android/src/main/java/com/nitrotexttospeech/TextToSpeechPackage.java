@@ -1,4 +1,4 @@
-package com.texttospeech;
+package com.nitrotexttospeech;
 
 import android.util.Log;
 
@@ -29,6 +29,6 @@ public class TextToSpeechPackage extends TurboReactPackage {
   }
 
   static {
-    System.loadLibrary("TextToSpeech");
+    System.loadLibrary("NitroTextToSpeech");
   }
 }

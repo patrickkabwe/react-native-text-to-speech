@@ -23,7 +23,7 @@
 #include <optional>
 #include <string>
 
-namespace margelo::nitro::texttospeech {
+namespace margelo::nitro::nitrotexttospeech {
 
   /**
    * A struct which can be represented as a JavaScript object (TextToSpeechOptions).
@@ -41,11 +41,11 @@ namespace margelo::nitro::texttospeech {
     explicit TextToSpeechOptions(std::optional<std::string> voiceIdentifier, std::optional<double> rate, std::optional<double> pitch, std::optional<double> postUtteranceDelay, std::optional<double> preUtteranceDelay, std::optional<double> volume): voiceIdentifier(voiceIdentifier), rate(rate), pitch(pitch), postUtteranceDelay(postUtteranceDelay), preUtteranceDelay(preUtteranceDelay), volume(volume) {}
   };
 
-} // namespace margelo::nitro::texttospeech
+} // namespace margelo::nitro::nitrotexttospeech
 
 namespace margelo::nitro {
 
-  using namespace margelo::nitro::texttospeech;
+  using namespace margelo::nitro::nitrotexttospeech;
 
   // C++ TextToSpeechOptions <> JS TextToSpeechOptions (object)
   template <>

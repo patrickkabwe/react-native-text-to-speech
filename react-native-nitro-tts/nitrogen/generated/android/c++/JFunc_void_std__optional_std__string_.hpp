@@ -14,7 +14,7 @@
 #include <optional>
 #include <string>
 
-namespace margelo::nitro::texttospeech {
+namespace margelo::nitro::nitrotexttospeech {
 
   using namespace facebook;
 
@@ -34,7 +34,7 @@ namespace margelo::nitro::texttospeech {
     }
 
   public:
-    static auto constexpr kJavaDescriptor = "Lcom/margelo/nitro/texttospeech/Func_void_std__optional_std__string_;";
+    static auto constexpr kJavaDescriptor = "Lcom/margelo/nitro/nitrotexttospeech/Func_void_std__optional_std__string_;";
     static void registerNatives() {
       registerHybrid({makeNativeMethod("call", JFunc_void_std__optional_std__string_::call)});
     }
@@ -47,4 +47,4 @@ namespace margelo::nitro::texttospeech {
     std::function<void(const std::optional<std::string>& /* word */)> _func;
   };
 
-} // namespace margelo::nitro::texttospeech
+} // namespace margelo::nitro::nitrotexttospeech

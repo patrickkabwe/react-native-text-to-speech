@@ -7,5 +7,5 @@
 
 #include "HybridTextToSpeechSpecSwift.hpp"
 
-namespace margelo::nitro::texttospeech {
-} // namespace margelo::nitro::texttospeech
+namespace margelo::nitro::nitrotexttospeech {
+} // namespace margelo::nitro::nitrotexttospeech

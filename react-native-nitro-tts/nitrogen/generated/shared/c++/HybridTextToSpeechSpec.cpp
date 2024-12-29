@@ -7,7 +7,7 @@
 
 #include "HybridTextToSpeechSpec.hpp"
 
-namespace margelo::nitro::texttospeech {
+namespace margelo::nitro::nitrotexttospeech {
 
   void HybridTextToSpeechSpec::loadHybridMethods() {
     // load base methods/properties
@@ -23,4 +23,4 @@ namespace margelo::nitro::texttospeech {
     });
   }
 
-} // namespace margelo::nitro::texttospeech
+} // namespace margelo::nitro::nitrotexttospeech

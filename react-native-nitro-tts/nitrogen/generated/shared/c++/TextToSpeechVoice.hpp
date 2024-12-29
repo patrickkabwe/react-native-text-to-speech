@@ -22,7 +22,7 @@
 
 #include <string>
 
-namespace margelo::nitro::texttospeech {
+namespace margelo::nitro::nitrotexttospeech {
 
   /**
    * A struct which can be represented as a JavaScript object (TextToSpeechVoice).
@@ -38,11 +38,11 @@ namespace margelo::nitro::texttospeech {
     explicit TextToSpeechVoice(std::string identifier, std::string name, std::string quality, std::string gender): identifier(identifier), name(name), quality(quality), gender(gender) {}
   };
 
-} // namespace margelo::nitro::texttospeech
+} // namespace margelo::nitro::nitrotexttospeech
 
 namespace margelo::nitro {
 
-  using namespace margelo::nitro::texttospeech;
+  using namespace margelo::nitro::nitrotexttospeech;
 
   // C++ TextToSpeechVoice <> JS TextToSpeechVoice (object)
   template <>

@@ -5,7 +5,7 @@
 /// Copyright © 2024 Marc Rousavy @ Margelo
 ///
 
-package com.margelo.nitro.texttospeech
+package com.margelo.nitro.nitrotexttospeech
 
 import android.util.Log
 import androidx.annotation.Keep
@@ -67,7 +67,7 @@ abstract class HybridTextToSpeechSpec: HybridObject() {
   
   @DoNotStrip
   @Keep
-  private fun addEventListener(event: EventName, listener: Func_void_std__optional_std__string_): Func_void {
+  private fun addEventListener(event: EventName, listener: Func_void_std__optional_std__string_): () -> Unit {
     val __result = addEventListener(event, listener.toLambda())
     return __result
   }
@@ -78,11 +78,11 @@ abstract class HybridTextToSpeechSpec: HybridObject() {
     private const val TAG = "HybridTextToSpeechSpec"
     init {
       try {
-        Log.i(TAG, "Loading TextToSpeech C++ library...")
-        System.loadLibrary("TextToSpeech")
-        Log.i(TAG, "Successfully loaded TextToSpeech C++ library!")
+        Log.i(TAG, "Loading NitroTextToSpeech C++ library...")
+        System.loadLibrary("NitroTextToSpeech")
+        Log.i(TAG, "Successfully loaded NitroTextToSpeech C++ library!")
       } catch (e: Error) {
-        Log.e(TAG, "Failed to load TextToSpeech C++ library! Is it properly installed and linked? " +
+        Log.e(TAG, "Failed to load NitroTextToSpeech C++ library! Is it properly installed and linked? " +
                     "Is the name correct? (see `CMakeLists.txt`, at `add_library(...)`)", e)
         throw e
       }

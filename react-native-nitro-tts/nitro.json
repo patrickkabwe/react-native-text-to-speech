@@ -1,21 +1,21 @@
 {
   "$schema": "https://nitro.margelo.com/nitro.schema.json",
   "cxxNamespace": [
-    "texttospeech"
+    "nitrotexttospeech"
   ],
   "ios": {
-    "iosModuleName": "TextToSpeech"
+    "iosModuleName": "NitroTextToSpeech"
   },
   "android": {
     "androidNamespace": [
-      "texttospeech"
+      "nitrotexttospeech"
     ],
-    "androidCxxLibName": "TextToSpeech"
+    "androidCxxLibName": "NitroTextToSpeech"
   },
   "autolinking": {
     "TextToSpeech": {
-      "swift": "TextToSpeech",
-      "kotlin": "TextToSpeech"
+      "swift": "HybridTextToSpeech",
+      "kotlin": "HybridTextToSpeech"
     }
   },
   "ignorePaths": [

@@ -12,7 +12,7 @@
 
 #include <functional>
 
-namespace margelo::nitro::texttospeech {
+namespace margelo::nitro::nitrotexttospeech {
 
   using namespace facebook;
 
@@ -32,7 +32,7 @@ namespace margelo::nitro::texttospeech {
     }
 
   public:
-    static auto constexpr kJavaDescriptor = "Lcom/margelo/nitro/texttospeech/Func_void;";
+    static auto constexpr kJavaDescriptor = "Lcom/margelo/nitro/nitrotexttospeech/Func_void;";
     static void registerNatives() {
       registerHybrid({makeNativeMethod("call", JFunc_void::call)});
     }
@@ -45,4 +45,4 @@ namespace margelo::nitro::texttospeech {
     std::function<void()> _func;
   };
 
-} // namespace margelo::nitro::texttospeech
+} // namespace margelo::nitro::nitrotexttospeech

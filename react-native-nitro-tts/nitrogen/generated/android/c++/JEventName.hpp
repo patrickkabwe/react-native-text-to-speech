@@ -10,7 +10,7 @@
 #include <fbjni/fbjni.h>
 #include "EventName.hpp"
 
-namespace margelo::nitro::texttospeech {
+namespace margelo::nitro::nitrotexttospeech {
 
   using namespace facebook;
 
@@ -19,7 +19,7 @@ namespace margelo::nitro::texttospeech {
    */
   struct JEventName final: public jni::JavaClass<JEventName> {
   public:
-    static auto constexpr kJavaDescriptor = "Lcom/margelo/nitro/texttospeech/EventName;";
+    static auto constexpr kJavaDescriptor = "Lcom/margelo/nitro/nitrotexttospeech/EventName;";
 
   public:
     /**
@@ -58,4 +58,4 @@ namespace margelo::nitro::texttospeech {
     }
   };
 
-} // namespace margelo::nitro::texttospeech
+} // namespace margelo::nitro::nitrotexttospeech

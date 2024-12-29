@@ -1,6 +1,6 @@
-import React, {useEffect} from 'react';
-import {Button, StyleSheet, Text, View} from 'react-native';
-import {TextToSpeech} from 'react-native-nitro-tts';
+import React, { useEffect } from 'react';
+import { Button, StyleSheet, Text, View } from 'react-native';
+import { TextToSpeech } from 'react-native-nitro-tts';
 
 const text =
   'React Native Text To Speech is amazing! 🎉 Check it out by running npm install react-native-nitro-tts';

@@ -8,7 +8,7 @@
 /**
  * Represents the JS union `EventName`, backed by a C++ enum.
  */
-public typealias EventName = margelo.nitro.texttospeech.EventName
+public typealias EventName = margelo.nitro.nitrotexttospeech.EventName
 
 public extension EventName {
   /**
