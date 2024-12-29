@@ -1,5 +1,5 @@
 {
-  "name": "react-native-text-to-speech",
+  "name": "react-native-nitro-tts",
   "version": "0.1.0",
   "description": "Nitro module package",
   "main": "./lib/commonjs/index.js",
@@ -35,13 +35,16 @@
     "postcodegen": "bun run build && node post-script.js"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "nitro",
+    "text to speech",
+    "react-native-nitro-tts"
   ],
-  "repository": "https://github.com/patrickkabwe/react-native-text-to-speech.git",
+  "repository": "https://github.com/patrickkabwe/react-native-nitro-tts.git",
   "author": "Patrick Kabwe",
   "license": "MIT",
-  "bugs": "https://github.com/patrickkabwe/react-native-text-to-speech/issues",
-  "homepage": "https://github.com/patrickkabwe/react-native-text-to-speech#readme",
+  "bugs": "https://github.com/patrickkabwe/react-native-nitro-tts/issues",
+  "homepage": "https://github.com/patrickkabwe/react-native-nitro-tts#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"

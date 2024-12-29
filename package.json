@@ -1,8 +1,8 @@
 {
-  "name": "react-native-text-to-speech",
+  "name": "react-native-nitro-tts",
   "private": true,
   "version": "0.0.0",
-  "repository": "https://github.com/patrickkabwe/react-native-text-to-speech.git",
+  "repository": "https://github.com/patrickkabwe/react-native-nitro-tts.git",
   "author": "Patrick Kabwe",
   "scripts": {
     "bootstrap": "bun --filter=\"**\" install && bun tsc && bun --filter=\"example\" pods",
@@ -10,7 +10,7 @@
     "release": "release-it"
   },
   "workspaces": [
-    "react-native-text-to-speech",
+    "react-native-nitro-tts",
     "example"
   ],
   "devDependencies": {
