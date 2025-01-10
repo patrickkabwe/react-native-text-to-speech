@@ -46,10 +46,10 @@ class HybridTextToSpeech: HybridTextToSpeechSpec(), TextToSpeech.OnInitListener 
     override fun stop(): Promise<Boolean> {
        return Promise.async {
            if (!tts.isSpeaking) {
-               return@async false
+               false
            } else {
                tts.stop()
-               return@async true
+              true
            }
        }
     }
@@ -57,10 +57,10 @@ class HybridTextToSpeech: HybridTextToSpeechSpec(), TextToSpeech.OnInitListener 
     override fun pause(): Promise<Boolean> {
         return Promise.async {
             if (!tts.isSpeaking) {
-                return@async false
+                false
             } else {
                 tts.stop()
-                return@async true
+                true
             }
         }
     }
